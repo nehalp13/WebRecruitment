@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitment Portal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Recruitment Portal</a>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white py-4">
+        <div class="container text-center">
+            <h1>Find the Best Talent for Your Company</h1>
+            <p>Explore the vast database of qualified candidates with various skills and experience levels.</p>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <section>
+            <div class="row">
+                <!-- Job Cards -->
+                <div class="col-md-4">
+                    <div class="job-card">
+                        <img src="https://pantheon.tech/wp-content/uploads/2019/04/java-dev-1030x772.png" height="300px" width="300px" alt="Software Engineer" class="img-fluid">
+                        <div class="job-details">
+                            <h3>Software Engineer</h3>
+                            <p>Location: Bangalore, India</p>
+                            <p>Experience: 2-5 years</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ... (Other job cards) ... -->
+                <div class="col-md-4">
+                    <div class="job-card">
+                        <img src="https://dvrfp7vt6y4co.cloudfront.net/59be0b27-e266-40f5-a6a7-af222d1d1152/3x.png" height="320px" width="320px" alt="Product Manager" class="img-fluid">
+                        <div class="job-details">
+                            <h3>Product Manager</h3>
+                            <p>Location: Mumbai, India</p>
+                            <p>Experience: 5-8 years</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="job-card">
+                        <img src="https://images.creativemarket.com/0.1.0/ps/11995166/3640/2410/m1/fpnw/wm1/data_scientist-.jpg?1646297101&s=387c9b2033c91e0647e37e596f3817a2" alt="Data Scientist" class="img-fluid">
+                        <div class="job-details">
+                            <h3>Data Scientist</h3>
+                            <p>Location: Delhi, India</p>
+                            <p>Experience: 3-6 years</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5">
+            <h2>Post a Job</h2>
+            <form id="job-form">
+                <div class="form-group">
+                    <label for="job-title">Job Title</label>
+                    <input type="text" class="form-control" id="job-title" required>
+                </div>
+                <!-- ... (Other form fields) ... -->
+                <div class="form-group">
+                    <label for="job-location">Location</label>
+                    <input type="text" class="form-control" id="job-location" required>
+                </div>
+                <div class="form-group">
+                    <label for="job-experience">Experience Required</label>
+                    <input type="text" class="form-control" id="job-experience" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Job</button>
+            </form>
+        </section>
+    </main>
+
+    <main class="container mt-5">
+        <!-- How it Works Section -->
+        <section class="mt-5">
+            <h2 align="center">How it Works</h2>
+            <div class="row">
+                <!-- How it Works Cards -->
+                <div class="col-md-4">
+                    <div class="how-it-works-card">
+                        <img src="https://talenttechlabs.com/wp-content/uploads/2020/10/bii-candidate-exp-hero.png" height="400px" width="300px" alt="Search Candidates" class="img-fluid">
+                        <div class="how-it-works-details">
+                            <h4>Search Candidates</h4>
+                            <p>Explore our vast database of qualified candidates with various skills and experience
+                                levels.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="how-it-works-card">
+                        <img src="https://cdni.iconscout.com/illustration/premium/thumb/post-job-vacancies-3177221-2666334.png" height="250px" width="250px" alt="Post Job" class="img-fluid">
+                        <div class="how-it-works-details">
+                            <h4>Post a Job</h4>
+                            <p>Submit your job openings with job titles, locations, and experience requirements.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="how-it-works-card">
+                        <img src="https://growthzonesitesprod.azureedge.net/wp-content/uploads/sites/832/2023/02/HiringArt-768x519.png" alt="Hire Candidates" class="img-fluid">
+                        <div class="how-it-works-details">
+                            <h4>Hire Candidates</h4>
+                            <p>Select and hire the best candidates for your company's needs and take your team to new
+                                heights.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hiring Process Section -->
+        <section class="mt-5">
+            <h2>Hiring Process</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form id="hiring-process-form">
+                        <div class="form-group">
+                            <label for="role">What Role Are You Looking For</label>
+                            <input type="text" class="form-control" id="role" placeholder="Enter Role" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="current-ctc">Your Current CTC</label>
+                            <input type="text" class="form-control" id="current-ctc" placeholder="Enter Current CTC"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="desired-ctc">Desired CTC</label>
+                            <input type="text" class="form-control" id="desired-ctc" placeholder="Enter Desired CTC"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="notice-period">What Is Your Notice Period</label>
+                            <input type="text" class="form-control" id="notice-period" placeholder="Enter Notice Period"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="current-location">Where Are You Currently Located</label>
+                            <input type="text" class="form-control" id="current-location"
+                                placeholder="Enter Current Location" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="desired-cities">Desired Cities to Work In</label>
+                            <input type="text" class="form-control" id="desired-cities"
+                                placeholder="Enter Desired Cities" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sit Back While Companies Compete Section -->
+        <section class="mt-5">
+            <h2>Sit Back While Companies Compete to </h2>
+            <h2>Hire You</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        Don't waste your time reaching out to companies or dealing with recruiters.
+                    </p>
+                    <p>
+                        <span>💨 We fast-track your profile to hiring managers.</span></br>
+                        <span>🙆️ Get multiple interview requests with upfront salary offers within days.</span>
+						<img src="https://global-uploads.webflow.com/605ad29901132bc543e01d9b/645c025ee1b4e8b007f55607_instant-client-feedback.png">
+                    </p>
+                </div>
+                <div class="col-md-5 ml-auto">
+                    <div class="company-offers">
+                        <!-- Company Offer 1 Details -->
+                        <div class="company-offer">
+                            <img src="https://th.bing.com/th/id/OIP.sDjJwj3mFzX67DVGuZcP4QHaDd?pid=ImgDet&w=855&h=400&rs=1" width="100" height="50" alt="Company Icon" class="company-icon">
+                            <div class="company-offer-details">
+                                <h4>INTEL</h4>
+                                <p>Role: Software Engineer</p>
+                                <p>Location: Pune, India</p>
+                                <p>Salary Offer: ₹12,00,000 per annum</p>
+                            </div>
+                        </div>
+                        <!-- ... (Other company offer details) ... -->
+                        <!-- Company Offer 2 -->
+                        <div class="company-offer">
+                            <img src="https://purepng.com/public/uploads/large/amazon-logo-s3f.png" width="200" height="100" alt="Company Icon" class="company-icon">
+                            <div class="company-offer-details">
+                                <h4>AMAZON</h4>
+                                <p>Role: Product Manager</p>
+                                <p>Location: Bangalore, India</p>
+                                <p>Salary Offer: ₹15,00,000 per annum</p>
+                            </div>
+                        </div>
+
+                        <!-- Company Offer 3 -->
+                        <div class="company-offer">
+                            <img src="https://th.bing.com/th/id/OIP.qhAPWvYnIyuJMR-rdUWrJgHaEK?pid=ImgDet&rs=1" width="200" height="100" alt="Company Icon" class="company-icon">
+                            <div class="company-offer-details">
+                                <h4>ACCENTURE</h4>
+                                <p>Role: Data Scientist</p>
+                                <p>Location: Mumbai, India</p>
+                                <p>Salary Offer: ₹18,00,000 per annum</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- More than 10,000 Top Companies Section -->
+        <section class="mt-5">
+            <h2 align="center" >More than 10,000 Top Companies</h2>
+            <div class="row">
+                <!-- Divide the row into multiple columns -->
+                <div class="col-md-3">
+                    <div class="company-logo">
+                        <img src="https://global-uploads.webflow.com/605ad29901132bc543e01d9b/62ebaed83c40993435e4b1e7_9-Covenant%20Technologies.svg" alt="Company Logo">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="company-logo">
+                        <img src="https://global-uploads.webflow.com/605ad29901132bc543e01d9b/62ebaee055a60947f2ace48f_10-Talent.svg" alt="Company Logo">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="company-logo">
+                        <img src="https://global-uploads.webflow.com/605ad29901132bc543e01d9b/62ebaee8676085b4b1095fa9_11-Speedinvest%20Heroes.svg" alt="Company Logo">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="company-logo">
+                        <img src="https://global-uploads.webflow.com/605ad29901132bc543e01d9b/62ebaef1b4e31a67598ec99e_12-Core_Group_Resources.svg" alt="Company Logo">
+                    </div>
+                </div>
+                <!-- Add more columns as needed -->
+                <div class="col-md-3">
+                    <div class="company-logo">
+                        <img src="https://global-uploads.webflow.com/605ad29901132bc543e01d9b/62ebaf0b676085b57a09604d_13-Medhelden.svg" alt="Company Logo">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="company-logo">
+                        <img src="https://global-uploads.webflow.com/605ad29901132bc543e01d9b/62e538555d5e1d2cfcc54a92_bubb.io.svg" alt="Company Logo">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="company-logo">
+                        <img src="https://global-uploads.webflow.com/605ad29901132bc543e01d9b/62e14252397ead1b22464111_7-GQR.svg" alt="Company Logo">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="company-logo">
+                        <img src="https://global-uploads.webflow.com/605ad29901132bc543e01d9b/62ebaf23bc04780bb51663e6_16-Alpin.svg" alt="Company Logo">
+                    </div>
+                </div>
+                <!-- Add more columns as needed -->
+                <div class="col-md-3">
+                    <div class="company-logo">
+                        <img src="https://global-uploads.webflow.com/605ad29901132bc543e01d9b/62ebaf3f1c8d353411aa797d_17-Pridestaff.svg" alt="Company Logo">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="company-logo">
+                        <img src="https://global-uploads.webflow.com/605ad29901132bc543e01d9b/62e1415de632524d66ed9240_2-Procom.svg" alt="Company Logo">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="company-logo">
+                        <img src="https://global-uploads.webflow.com/605ad29901132bc543e01d9b/62e141c6dde1420d0e8a5977_4-Spinks.svg" alt="Company Logo">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="company-logo">
+                        <img src="https://global-uploads.webflow.com/605ad29901132bc543e01d9b/62e141ba9e7a484f36021f1b_6-NES_Fircroft.svg" alt="Company Logo">
+                    </div>
+                </div>
+                <!-- Add more columns as needed -->
+                <div class="col-md-3">
+                    <div class="company-logo">
+                        <img src="https://global-uploads.webflow.com/605ad29901132bc543e01d9b/62e141f336b43dcfea0d2386_8-Artisan.svg" alt="Company Logo">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="company-logo">
+                        <img src="https://global-uploads.webflow.com/605ad29901132bc543e01d9b/62e538554512d6ef11c4345b_9-Maxima_Consulting.svg" alt="Company Logo">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="company-logo">
+                        <img src="https://global-uploads.webflow.com/605ad29901132bc543e01d9b/62ebafc107602ba5c0658acc_23-EQ_Community.svg" alt="Company Logo">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="company-logo">
+                        <img src="https://global-uploads.webflow.com/605ad29901132bc543e01d9b/62ebafc97f7f91adeeaa48cb_24-BenchmarkIT.svg" alt="Company Logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
